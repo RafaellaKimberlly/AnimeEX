@@ -1,0 +1,2 @@
+# AnimeEX
+Projeto individual
