@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div class="container">
+    <div>
+        <h1 id="titulo">Cadastro de Otakus:</h1>
+        <br>
+        <p id="subtitulo">Complete suas informações:</p>
+        <br>
+    </div>
+    <br>
+
+    <form class="form">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="data"><strong>Data de Nascimento:</strong></label>
+                <input type="date" name="data" id="data" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha"><strong>Senha:</strong></label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+
+            <div class="campo">
+                <label for="conf_senha"><strong>confirmação de senha:</strong></label>
+                <input type="password" name="conf_senha" id="conf_senha" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="campo">
+                <label for="genero"><strong>Genero:</strong></label>
+                <label for="feminino"> 
+                    <input type="radio" name="genero" value="feminino" checked>feminino
+                </label>
+
+                <label for="masculino"> 
+                    <input type="radio" name="genero" value="Masculino">Masculino
+                </label>
+
+                <label for="neutro"> 
+                    <input type="radio" name="genero" value="Neutro">Neutro
+                </label>
+            </div>
+
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong>:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="conf_email"><strong>Confirmação de Email:</strong></label>
+            <input type="conf_email" name="conf_email" id="conf_email" required>
+        </div>
+
+        <div class="campo">
+            <label for="qual"><strong>Qual é o anime que você mais gosta?</strong></label>
+            <label for="one"> 
+                <input type="radio" name="gosta" value="one" checked>One-Piece
+            </label>
+
+            <label for="naruto">
+                <input type="radio" name="gosta" value="naruto">Naruto
+            </label>
+
+            <label for="dbz">
+                <input type="radio" name="gosta" value="dbz">Dragon-ball-Z
+            </label>
+
+            <label for="cdz">
+                <input type="radio" name="gosta" value="cdz">Cavaleiros-do-Zodiaco
+            </label>
+
+            <label for="yuyu">
+                <input type="radio" name="gosta" value="yuyu">Yu-yu-hakusho
+            </label>
+
+            <label for="bleach">
+                <input type="radio" name="gosta" value="bleach">Bleach
+            </label>
+
+            <label for="pokemon">
+                <input type="radio" name="gosta" value="pokemon">Pokemon
+            </label>
+
+            <label for="samuraix">
+                <input type="radio" name="gosta" value="samuraix">Samurai-X
+            </label>
+
+            <label for="yugi">
+                <input type="radio" name="gosta" value="yugi">Yu-gi-oh
+            </label>
+
+            <label for="ft">
+                <input type="radio" name="gosta" value="ft">fairy-tail
+            </label>
+
+            <label for="inu">
+                <input type="radio" name="gosta" value="inu">Inuyasha
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="nivel"><strong>Qual o seu nivel de otaku</strong></label>
+            <select id="nivel">
+                <option selected disabled value="">--selecione--</option>
+                <option value="start">iniciante</option>
+                <option value="medium">Quase hard</option>
+                <option value="extreme">Extremo</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo1">
+            <div id="check">
+                <label for="fortes"><strong>Selecione os personagens mais fortes</strong></label><br><br>
+                <input type="checkbox" id="fortes" value="luffy">
+                <label for="fortes1">Luffy</label>
+
+                <input type="checkbox" id="fortes" value="goku">
+                <label for="fortes2">Goku</label>
+
+                <input type="checkbox" id="fortes" value="meliodas">
+                <label for="fortes3">Meliodas</label>
+
+                <input type="checkbox" id="fortes" value="saitama">
+                <label for="fortes4">Saitama</label>
+
+                <input type="checkbox" id="fortes" value="madara">
+                <label for="fortes5">Madara</label>
+
+                <input type="checkbox" id="fortes" value="naruto">
+                <label for="fortes6">Naruto</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="conte"><strong>Conte um pouco sobre como sua vida tem a ver com animes:</strong></label>
+            <textarea name="experiencia" id="experiencia" cols="30" rows="6" style="width: 13cm;"></textarea>
+        </div>
+
+        <button type="submit" id="concluido" onclick="concluido()" class="but">Concluído</button>
+    </form>
+</div>
+
+</body>
+</html>

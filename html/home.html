@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <!--Menu-->
+    <div id="menu">
+        <div id="menu-bar" onclick="menu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Animes</a></li>
+            <li><a href="#">Mangás</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="../html/formulario.html"><button class="but">Login</button></a></li>
+        </ul>
+    </div>
+<div class="menu-bg" id="menu-bg"></div>
+    <!-- fim -->
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- formas -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(151, 252, 252)" fill-opacity="1" d="M0,160L30,176C60,192,120,224,180,234.7C240,245,300,235,360,218.7C420,203,480,181,540,192C600,203,660,245,720,234.7C780,224,840,160,900,128C960,96,1020,96,1080,101.3C1140,107,1200,117,1260,133.3C1320,149,1380,171,1410,181.3L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+
+    <!-- rodapé -->
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <ul>
+                    <li class="grid-8"><h2>AnimeEX</h2>
+                    <p><a href="">Central de ajuda</a></p>
+                    <p><a href="">Politicas de privacidade</a></p>
+                    <p><a href="">Termos de serviço</a></p>
+                     </li>
+
+                     <li class="grid-4"><h2>Siga-nos</h2>
+                         <img class="img_icone" src="../imagem/face.png" alt="icone facebook">
+                         <img class="img_icone" src="../imagem/whats.png" alt="icone whatsapp">
+                         <img class="img_icone" src="../imagem/insta.png" alt="icone instagram">
+                         <img class="img_icone" src="../imagem/git.png" alt="icone github">
+                     </li>
+
+                     <li class="grid-4"><h2>Baixe nossa Newsletter</h2>
+                        <button onclick="receber()" class="but">Receber</button>
+                    </li>
+
+                    <li class="grid-8">
+                        <h2>Entre em contato conosco</h2>
+                        <input name="nome-cont" type="text" id="nome_cont" placeholder="Nome">
+                        <br><br>
+
+                        <input name="email-cont" type="email" id="email_cont" placeholder="Email">
+                        <br><br>
+
+                        <textarea name="msg-cont" id="msg_cont" cols="22" rows="5" placeholder="Escreva uma mensagem"></textarea>
+                        <br><br>
+
+                        <button class="but" onclick="enviar()">Enviar</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="footer2"><b> © Copyright 2021 - Feito com carinho por Rafaella Kimberlly </b></div>
+
+    </footer>
+
+</body>
+</html>
+
+<script src="../html/js-home.js"></script>
