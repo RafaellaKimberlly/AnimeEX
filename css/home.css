@@ -1,9 +1,11 @@
 body{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgba(255, 255, 255, 0.404);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0%;
     padding: 0%;
+    background-image: url('https://images8.alphacoders.com/632/thumb-1920-632051.png');
+    background-repeat:repeat;
 }
+
 #menu{
     z-index: 2;
 }
@@ -49,7 +51,7 @@ body{
 }
 .nav li a:hover{
     font-weight: bold;
-    color: rgb(151, 252, 252);
+    color: #20B2AA;
 }
 .menu-bg, #menu{
     top: 0;
@@ -61,7 +63,7 @@ body{
     width: 0;
     height: 0;
     margin: 30px 0 20px 20px;
-    background: radial-gradient(circle,white,rgb(151, 252, 252));
+    background: radial-gradient(circle,#FFE4E1,white);
     border-radius: 50%;
     transition: 0,3s ease;
 }
@@ -83,8 +85,8 @@ body{
 }
 
 .change-bg{
-    width: 550px;
-    height: 715px;
+    width: 627px;
+    height: 770px;
     transform: translate(-60%, -30%);
 }
 
@@ -92,26 +94,187 @@ body{
     padding: 10px 8px;
     text-align: center;
     cursor: pointer;
-    
-
+    background-color: #FF69B4;
     border-radius: 10px;
     font-size: 20px;
-    color: rgb(253, 53, 137);
-    border-color: rgb(253, 53, 137); 
+    color: black;
+    border-color: black; 
     width: 120px;
     height: 40px;
 }
 .but:hover{
-    background: radial-gradient(circle,white,rgb(253, 53, 137));
+    background: radial-gradient(circle,white,#DDA0DD);
     transition: background 1s;
 }
 
+.but2{
+    padding: 10px 8px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #FF69B4;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    border-color: black; 
+    width: 150px;
+    height: 50px;
+}
+.but2:hover{
+    background: radial-gradient(circle,white,#DDA0DD);
+    transition: background 1s;
+}
+
+.but_saiba{
+    width: 150px;
+    height: 50px; 
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    color: #20B2AA;
+    border-color: #20B2AA;
+}
+.but_saiba:hover{
+    background-color: #20B2AA;
+    color: black;
+    transform: scale(1.1);
+}
+.logo{
+    width: 10%;
+    float: right;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+.img_icone{
+    width: 15%;
+}
+.div{
+    width: 100%;
+    height: 320px;
+    background-color: #FFE4E1;
+    margin-top: -1%; 
+    margin-bottom: 20px;
+}
+.img-solta{
+    width: 50%;
+    margin-left: 40px;
+    float: left;
+
+}
+
+.img-solta2{
+    width: 60%;
+}
+
+
+.box2{
+    float: left;
+}
+
+.box3{
+    height: 400px;
+}
+.container{
+    margin-bottom: 50px;
+
+}
+.container-diferente{
+    border-top: 5px groove #DDA0DD; 
+    border-bottom: 5px groove #DDA0DD;
+}
+
+h2{
+    margin-top: 15px;
+
+}
+
+.frase{
+    width: 440px;
+    float: right;
+    margin-top: 35px;
+    margin-right: 50px;
+    font-size: 25px;
+    color: #20B2AA;
+}
+
+.frase2{
+    width: 570px;
+    float: left;
+    margin-top: 35px;
+    font-size: 25px;
+    color: #DDA0DD;
+    margin-left: 75px;
+}
+
+.frase3{
+    width: 440px;
+    float: right;
+    margin-top: 35px;
+    margin-right: 50px;
+    font-size: 25px;
+    color: black;
+
+        display: inline-block;
+        background-color: #ff69b4bd;
+        box-shadow: 3px 3px 5px 2px #ccc;
+        padding: 60px 28px 8px 20px;
+        border-radius: 20px;
+        width: 400px;
+        padding-bottom: 60px;
+        margin-top: 0px;
+    
+}
+
+.box{
+    text-align: center;
+    color: white;
+}
+
+/* galeria sanfona */
+
+.sanfona{
+    width: 60%;
+    height: 450px;
+    overflow: hidden;
+    margin: 40px auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+/* um pequeno 'hack' para evitar oscilações em alguns navegadores */
+.sanfona ul{
+    width: 200%;
+}
+
+.sanfona li{
+    position: relative;
+    display: block;
+    width: 50px;
+    float: left;
+    border-left: 1px solid #888;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.sanfona ul :hover li {width: 100px;}
+
+.sanfona ul li:hover {width: 500px;}
+
+.sanfona li img{
+    display: block;
+    width: 300px;
+    height: 450px;
+}
+/* fim */
+
 /* rodapé */
 .footer{
-    height: 310px;
-    background: radial-gradient(circle,white,rgb(151, 252, 252));
+    height: 325px;
+    background-color:#e2e0e2b7;
     margin: 0%;
-    border-bottom: 5px groove rgb(253, 53, 137);
+    border-bottom: 5px groove #DDA0DD;
 }
 
 .footer h2{
@@ -131,7 +294,7 @@ body{
 }
 
 .footer2{
-    background: radial-gradient(circle,white,rgb(151, 252, 252));
+    background: radial-gradient(circle,white,#FFE4E1);
     height: 12%;
     width: 100%;
     padding-top: 17px;
@@ -143,7 +306,7 @@ body{
     text-decoration: none;
 }
 .footer li a:houver{
-    background: radial-gradient(circle,white,rgb(253, 53, 137));
+    background: radial-gradient(circle,white,#FF69B4);
     font-weight: bold;
 }
 
@@ -155,6 +318,3 @@ body{
 
 }
 
-.img_icone{
-    width: 15%;
-}
