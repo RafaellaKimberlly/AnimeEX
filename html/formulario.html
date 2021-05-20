@@ -5,15 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/form.css">
-    <title>Cadastro</title>
+    <link rel="shortcut icon" href="../logo/logo.png">
+    <link rel="stylesheet" href="../css/home.css">
+
+    <title>Formulario</title>
 </head>
 <body>
 
-    <div class="container">
+    <!--Menu-->
+    <div id="menu">
+        <div id="menu-bar" onclick="menu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="animes.html">Animes</a></li>
+            <li><a href="mangas.html">Mangás</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cadastro_login.html"><button class="but">Login</button></a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <!-- fim -->
+
+    <!-- logo no header da pagina -->
     <div>
-        <h1 id="titulo">Cadastro de Otakus:</h1>
+        <a href="index.html"><img src="../logo/logocorte.gif" alt="logo" class="logo"></a>
+    </div>
+
+    <div class="container-form">
+    <div>
+        <h1 id="titulo">Formulario de Otakus:</h1>
         <br>
-        <p id="subtitulo">Complete suas informações:</p>
+        <p id="subtitulo">Complete suas informações para pesquisa antes de fazer seu cadastro:</p>
         <br>
     </div>
     <br>
@@ -35,19 +62,10 @@
                 <input type="date" name="data" id="data" required>
             </div>
 
-            <div class="campo">
-                <label for="senha"><strong>Senha:</strong></label>
-                <input type="password" name="senha" id="senha" required>
-            </div>
-
-            <div class="campo">
-                <label for="conf_senha"><strong>confirmação de senha:</strong></label>
-                <input type="password" name="conf_senha" id="conf_senha" required>
-            </div>
-
             <br>
             <br>
 
+            <div class="genero">
             <div class="campo">
                 <label for="genero"><strong>Genero:</strong></label>
                 <label for="feminino"> 
@@ -62,6 +80,7 @@
                     <input type="radio" name="genero" value="Neutro">Neutro
                 </label>
             </div>
+        </div>
 
         </fieldset>
 
@@ -99,26 +118,6 @@
 
             <label for="bleach">
                 <input type="radio" name="gosta" value="bleach">Bleach
-            </label>
-
-            <label for="pokemon">
-                <input type="radio" name="gosta" value="pokemon">Pokemon
-            </label>
-
-            <label for="samuraix">
-                <input type="radio" name="gosta" value="samuraix">Samurai-X
-            </label>
-
-            <label for="yugi">
-                <input type="radio" name="gosta" value="yugi">Yu-gi-oh
-            </label>
-
-            <label for="ft">
-                <input type="radio" name="gosta" value="ft">fairy-tail
-            </label>
-
-            <label for="inu">
-                <input type="radio" name="gosta" value="inu">Inuyasha
             </label>
         </div>
 
@@ -158,12 +157,77 @@
         <div class="campo">
             <br>
             <label for="conte"><strong>Conte um pouco sobre como sua vida tem a ver com animes:</strong></label>
-            <textarea name="experiencia" id="experiencia" cols="30" rows="6" style="width: 13cm;"></textarea>
+            <textarea name="experiencia" id="experiencia" cols="30" rows="7" style="width: 13cm;"></textarea>
         </div>
 
-        <button type="submit" id="concluido" onclick="concluido()" class="but">Concluído</button>
+       <a href="cadastro_login.html"><button type="submit" id="concluido" onclick="concluido()" class="but-form">Concluído</button></a> 
     </form>
 </div>
+
+<!-- rodapé -->
+<footer>
+    <section class="footer">
+        <div class="container">
+            <ul>
+                <li class="grid-8">
+                    <h2>AnimeEX</h2>
+                    <p><a href="">Central de ajuda</a></p>
+                    <p><a href="">Politicas de privacidade</a></p>
+                    <p><a href="">Termos de serviço</a></p>
+                </li>
+
+                <li class="grid-4">
+                    <h2>Siga-nos</h2>
+                    <section class="section">
+                        <div class="rede" id="facebook">
+                            <a href="https://www.facebook.com/"><img src="../imagem/face.png" class="icone"
+                                    alt="icone facebook"></a>
+                        </div>
+                        <div class="rede" id="youtube">
+                            <a href="https://www.youtube.com/"><img src="../imagem/you.png" class="icone"
+                                    alt="icone youtube"></a>
+                        </div>
+                        <div class="rede" id="github">
+                            <a href="https://github.com/RafaellaKimberlly/AnimeEX.git"><img src="../imagem/git.png"
+                                    class="icone" alt="icone github"></a>
+                        </div>
+                        <div class="rede" id="whatsapp">
+                            <a href="https://www.whatsapp.com/?lang=pt_br"><img src="../imagem/whats.png"
+                                    class="icone" alt="icone whatsapp"></a>
+                        </div>
+                    </section>
+                </li>
+
+                <li class="grid-4">
+                    <h2>Baixe nossa Newsletter</h2>
+                    <button onclick="baixar()" class="but">baixar</button>
+                </li>
+
+                <li class="grid-8">
+                    <h2>Entre em contato conosco</h2>
+                    <input type="text" id="nome_cont" placeholder="Nome" required>
+                    <br><br>
+
+                    <input type="email" id="email_cont" placeholder="Email" required>
+                    <br><br>
+
+                    <textarea id="msg_cont" cols="22" rows="5" placeholder="Escreva uma mensagem"
+                        required></textarea>
+                    <br><br>
+
+                    <button class="but" onclick="enviar()">Enviar</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="footer2"><b> © Copyright 2021 - Feito com carinho por Rafaella Kimberlly </b></div>
+
+</footer>
+</body>
+</html>
+
+<script src="js-home.js"></script>
 
 </body>
 </html>
