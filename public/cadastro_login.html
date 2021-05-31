@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro_login.css">
+    <link rel="shortcut icon" href="logo/logo.png">
+    <script src="https://kit.fontawesome.com/bb73424f45.js" crossorigin="anonymous"></script>
+    <title>Cadastro_Login</title>
+</head>
+<!--Menu-->
+<div id="menu">
+    <div id="menu-bar" onclick="menu()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+    </div>
+    <ul class="nav" id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html/sobre.html">Sobre</a></li>
+        <li><a href="html/animes.html">Animes</a></li>
+        <li><a href="html/mangas.html">Mangás</a></li>
+        <li><a href="html/curso.html">Curso</a></li>
+        <li><a href="https://animeex.atlassian.net/servicedesk/customer/portal/1">Contato</a></li>
+        <li><a href="cadastro_login.html"><button class="but">Login</button></a></li>
+    </ul>
+</div>
+<div class="menu-bg" id="menu-bg"></div>
+<!-- fim -->
+
+<!-- logo no header da pagina -->
+<div>
+    <a href="index.html"><img src="../logo/logocorte.gif" alt="logo" class="logo"></a>
+</div>
+
+<body>
+
+     
+    <!-- cadastro -->
+<div class="container-cadastro">
+    <div class="forms-container">
+        <div class="signin-signup">
+            
+            <form action="" class="sign-in-form" id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                <h2 class="title">Cadastre-se</h2>
+                <!-- nome -->
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="nome" class="input-padrao" autofocus="autofocus" placeholder="Nome" required minlength="3">
+                </div>
+
+                <!-- senha -->
+                <div class="input-field">
+                    <i class="fas fa-at"></i>
+                    <input type="email" name="login" class="input-padrao" placeholder="email" required minlength="6">
+                </div>
+
+                <!--login -->
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="senha" class="input-padrao" placeholder="*******" required minlength="6">
+                </div>
+
+                <input type="submit" id="btn_cadastrar" value="Cadastrar" class="btn-solid">
+
+                <p class="social-text">Ou Cadastre-se com sua rede social</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://mail.google.com/" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </form>
+            <!-- fim -->
+
+            <!-- Login -->
+            <form class="sign-up-form" method="POST" onsubmit="return entrar()" name="form" id="form_login">
+                <h2 class="title">Faça login</h2>
+             <!-- senha -->
+             <div class="input-field">
+                <i class="fas fa-at"></i>
+                <input type="email" placeholder="Email" id="inp_email" name="login" required>
+            </div>
+
+            <!--login -->
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Senha" id="inp_senha" name="senha" required>
+            </div>
+
+            <a class="password" href="#">esqueceu sua senha?</a>
+
+            <input type="submit" id="btn_entrar" value="Entrar" class="btn-solid">
+            <br>
+            <p class="social-text">Ou entre com sua rede social</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://mail.google.com/" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </form>
+
+            <img src="https://phoneky.co.uk/thumbs/screensavers/down/anime/naruto_5jachsce.gif" id="img_aguarde" style="display: none; width:250px">
+            <!-- fim -->
+        </div>
+    </div>
+
+    <!-- painel que se move -->
+    <div class="panels-container">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>Seja bem-vindo</h3>
+                <p>Espero que sua experiência seja とてもすばらし. <br> 
+                    Fique a vontade para se enterter da melhor forma.</p>
+                <button class="btn-solid transparent" id="sign-up-btn">sign up</button>
+            </div>
+
+            <a href="https://url.gratis/9VBII"><img src="../imagem/meliodas.png" class="img-login" alt="meliodas"></a>
+        </div>
+
+        <div class="panel right-panel">
+            <div class="content">
+                <h3>Sentimos saudades</h3>
+                <p>Sua companhia é muito importante para nós.</p>
+                <button class="btn-solid transparent" id="sign-in-btn">sign in</button>
+            </div>
+
+            <a href="https://pt.wikipedia.org/wiki/Kimetsu_no_Yaiba"><img src="../imagem/Tanjiro_Kamado.png" class="img-login" alt="Tanjiro Kamado"></a>
+        </div>
+    </div>
+</div>
+<!-- fim -->
+
+
+</body>
+</html>
+    
+<script src="html/login.js"></script>
+<script src="html/js-home.js"></script>
+<script data-jsd-embedded data-key="fea9410d-df66-481e-ae42-f4bd272b77df" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+    
+
+
+
+
+
+

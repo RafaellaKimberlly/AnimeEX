@@ -1,0 +1,394 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+body{
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images5.alphacoders.com/705/thumb-1920-705751.png');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+/* menu */
+#menu{
+    z-index: 2;
+    text-shadow: 3px 3px pink;
+}
+#menu-bar{
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar{
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(#20B2AA,#FF69B4);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+
+#bar3{
+    transform: translateY(4px);
+}
+
+.nav{
+    transition: 0.3s ease;
+    display: none;
+    margin-left: 20px;
+}
+.nav ul{
+    padding: 0 22px;
+}
+.nav li{
+    list-style: none;
+    padding: 12px 0;
+}
+.nav li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav li a:hover{
+    font-weight: bold;
+    color: #20B2AA;
+}
+.menu-bg, #menu{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-bg{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle,#20B2AA,#FF69B4);
+    text-shadow: 3px 3px pink;
+    border-radius: 50%;
+    transition: 0,3s ease;
+}
+
+.change{
+    display: block;
+}
+.change .bar{
+    background-color: #FF69B4;
+}
+.change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar2{
+    opacity: 0;
+}
+.change #bar3{
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg{
+    width: 627px;
+    height: 770px;
+    transform: translate(-60%, -30%);
+}
+/* fim */
+
+/* botões */
+.but{
+    padding: 10px 8px;
+    text-align: center;
+    cursor: pointer;
+    background-image: linear-gradient(#20B2AA,#FF69B4);
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    border-color: black; 
+    width: 120px;
+    height: 40px;
+}
+.but:hover{
+    background: radial-gradient(circle,white,#DDA0DD);
+    transition: background 1s;
+}
+.logo{
+    width: 10%;
+    float: right;
+    padding-right: 15px;
+    padding-top: 8px;
+    position: absolute;
+    left: 1199px;
+    top: 0px;
+}
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-family: sans-serif;
+}
+img{
+    width: 100%;
+}
+.blog-post{
+    width: 100%;
+    max-width: 73%;
+    padding: 3rem;
+    background-color: #fff;
+    box-shadow: 0 1.4rem 8rem rgba(50, 50, 50, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+    margin-left: 130px;
+    margin-top: 80px;
+}
+.blog-post__img{
+    max-width: 90rem;
+    transform: translateX(-8rem);
+    position: relative;
+}
+.blog-post__img img{
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+}
+.blog-post__img::before{
+    content: '';
+    width: 150%;
+    height: 103%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #ff69b483,#20b2ab96);
+    box-shadow: .5rem .5rem 3rem 1px rgba(50, 50, 50, 0.2);
+}
+.blog-post__date span{
+    display: block;
+    color: rgba(50, 50, 50, 0.2);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+.blog-post__title{
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: #DDA0DD;
+}
+.blog-post__text{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: rgba(50, 50, 50, 0.486);
+}
+.blog-post__cta{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(50, 50, 50, 0.486);
+    background-image: linear-gradient(to right, #FF69B4 0%,#20B2AA 100%);
+    border-radius: .8rem;
+    text-decoration: none;
+}
+.blog-post__cta:hover{
+    background-image: linear-gradient(to right, #FF69B4 0%,#20B2AA 100%);
+}
+@media screen and (max-width: 1068px){
+    .blog-post{
+        max-width: 80rem;
+    }
+}
+
+@media screen and (max-width: 868px){
+    .blog-post{
+        padding: 2.5rem;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .blog-post{
+        padding: 2.5rem;
+        flex-direction: column;
+    }
+    .blog-post__img{
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0, -8rem)
+    }
+}
+
+.meio{
+  width: 90%;
+  height: 15px;
+}
+
+.meio-caixa{
+    width: 106%;
+    height: 410px;
+    margin-left: 50px;
+}
+
+.galeria{
+    margin-left: 20px;
+}
+.galeria img{
+    width: 21%;
+    height: 370px;
+    float: left;
+    margin-right: 50px;
+    margin-top: 25px;
+    border-radius: 5px;
+    box-shadow: 8px 12px #DDA0DD;
+}
+/* O metodo rotate gira um elemento no sentido horario ou anti-horario */
+.galeria img:hover{
+    background-color: #20B2AA;
+  transform: rotate(20deg); /* sixtaxe padrão */
+}
+
+
+.wave{
+    background-image: linear-gradient(to right,#69faffcb,#20B2AA);
+    height: 430px;
+    margin-top: -1%;
+}
+.wave img{
+    width: 45%;
+    float: left;
+    margin-left: 20px;
+}
+.wave-text{
+    width: 590px;
+    float: left;
+    font-size: 18px;
+}
+.wave-text h2{
+    margin-left: 70px;
+    text-decoration: overline;
+    text-shadow: 2px 2px 5px #DDA0DD;
+    margin-top: 20px;
+}
+.wave-text p{
+    margin-left: 70px;
+    text-shadow: 2px 2px 5px #DDA0DD;
+}
+.wave-text:hover{
+    font-size: 19px;
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+.titulo-principal{
+    /* font-size: 3.5rem; */
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right,#20B2AA,#FF69B4);
+    color: transparent;
+    letter-spacing: 0.2rem;
+    transition: all 0.2s;
+    -webkit-background-clip:text; /* propriedade define até que ponto o plano de fundo (cor ou imagem) deve se estender em um elemento. */
+}
+.titulo-principal:hover{
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+
+/* rodapé */
+.footer{
+    width: 100%;
+    height: 325px;
+    background-color:#e2e0e2b7;
+    margin: 0%;
+    border-bottom: 5px groove #DDA0DD;
+    text-shadow: 3px 3px pink;
+}
+
+.footer h2{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.footer p{
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: black;
+    margin-top: 10px;
+}
+
+.footer2{
+    background: radial-gradient(circle,white,#FFE4E1);
+    height: 15%;
+    width: 100%;
+    padding-top: 17px;
+    text-align: center;
+    text-shadow: 3px 3px pink;
+}
+.footer li a{
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+}
+.footer li a:houver{
+    background: radial-gradient(circle,white,#FF69B4);
+    font-weight: bold;
+}
+
+.grid-4, .grid-8{
+    float: left;
+    padding-right: 70px;
+    text-align: center;
+    width: 248px;
+}
+
+/* redes dentro do rodapé */
+.section{
+    margin: 50px auto;
+    width: 1025px;
+    height: 150px;
+}
+.rede{
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+    transition: all 0.4s ease-out;
+    border-radius: 50px;
+}
+.rede:hover{
+    cursor: pointer;
+    transform: translateY(-20px);
+    box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);
+}
+
+.rede#facebook, #youtube, #github, #whatsapp{
+    background-image: linear-gradient(#20B2AA,#FF69B4);
+}
+
+
+.icone{
+    margin: 0% auto;
+    padding: 6px;
+    width: 40px;
+}
+/* fim */
