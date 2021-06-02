@@ -20,16 +20,17 @@
         </div>
         <ul class="nav" id="nav">
             <li><a href="index.html">Home</a></li>
-        <li><a href="html/sobre.html">Sobre</a></li>
-        <li><a href="html/animes.html">Animes</a></li>
-        <li><a href="html/mangas.html">Mangás</a></li>
-        <li><a href="html/curso.html">Curso</a></li>
-        <li><a href="https://animeex.atlassian.net/servicedesk/customer/portal/1">Contato</a></li>
-        <li><a href="cadastro_login.html"><button class="but">Login</button></a></li>
+            <!-- <li><a href="html/sobre.html">Sobre</a></li>
+            <li><a href="html/animes.html">Animes</a></li>
+            <li><a href="html/mangas.html">Mangás</a></li>
+            <li><a href="html/curso.html">Curso</a></li> -->
+            <li><a href="https://animeex.atlassian.net/servicedesk/customer/portal/1">Contato</a></li>
+            <li><a href="cadastro_login.html"><button class="but">Login</button></a></li>
         </ul>
     </div>
     <div class="menu-bg" id="menu-bg"></div>
     <!-- fim -->
+
 
     <!-- logo no header da pagina -->
     <div>
@@ -40,7 +41,8 @@
     <!-- imagem luffy solta -->
     <div class="container">
         <div class="box3">
-            <a href="https://pt.wikipedia.org/wiki/One_Piece"><img src="../imagem/luffy-removebg-preview.png" alt="imagem luffy" class="img-solta"></a>
+            <a href="https://pt.wikipedia.org/wiki/One_Piece"><img src="../imagem/luffy-removebg-preview.png"
+                    alt="imagem luffy" class="img-solta"></a>
 
 
             <!-- imagem logo sem fundo -->
@@ -49,7 +51,26 @@
                 <br>
 
                 <a href="html/formulario.html"><button onclick="form()" class="but2">Formulário</button></a>
-                <a href="html/sobre.html"><button onclick="saiba()" class="but_saiba">Saiba +</button></a>
+                <button class="but_saiba"><label class="btn" for="modal-1">Clique aqui</label></button>
+
+                <input class="modal-state" id="modal-1" type="checkbox" />
+
+                <div class="modal">
+                    <label class="modal__bg" for="modal-1">
+                    </label>
+                    <div class="modal__inner">
+                        <label class="modal__close" for="modal-1"></label>
+                        
+                        <img src="logo/A.gif" alt="" width="140px">
+
+                        <h3 class="frase-modal">Seja muito bem-vindo otaku.<br>
+                            Que tal poder assistir animes, ler mangás e ter acesso ao nosso curso de japônes?<br><br>
+                            É só se cadastrar...
+                        </h3>
+                        <br>
+                        <a href="html/cadastro_login.html"><button class="but_saiba">Cadastre-se</button></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -167,7 +188,8 @@
 
                 <li>
                     <div class="imagem tittle">
-                        <a href="https://pt.wikipedia.org/wiki/Ano_Hi_Mita_Hana_no_Namae_o_Bokutachi_wa_Mada_Shiranai"></a>
+                        <a
+                            href="https://pt.wikipedia.org/wiki/Ano_Hi_Mita_Hana_no_Namae_o_Bokutachi_wa_Mada_Shiranai"></a>
                     </div>
                     <a href="#">
                         <img src="https://i.pinimg.com/564x/3c/fc/c9/3cfcc9834cd45ec246eaa33e5373f32e.jpg" alt="">
@@ -184,14 +206,17 @@
             <path fill="#FFE4E1" fill-opacity="1"
                 d="M0,160L30,176C60,192,120,224,180,234.7C240,245,300,235,360,218.7C420,203,480,181,540,192C600,203,660,245,720,234.7C780,224,840,160,900,128C960,96,1020,96,1080,101.3C1140,107,1200,117,1260,133.3C1320,149,1380,171,1410,181.3L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
             </path>
-        <path fill="#ffe4e1be" fill-opacity="1" d="M0,0L48,32C96,64,192,128,288,128C384,128,480,64,576,48C672,32,768,64,864,112C960,160,1056,224,1152,218.7C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-        </path>
-        <path fill="#ffe4e19d" fill-opacity="1" d="M0,160L48,133.3C96,107,192,53,288,37.3C384,21,480,43,576,96C672,149,768,235,864,229.3C960,224,1056,128,1152,101.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            <path fill="#ffe4e1be" fill-opacity="1"
+                d="M0,0L48,32C96,64,192,128,288,128C384,128,480,64,576,48C672,32,768,64,864,112C960,160,1056,224,1152,218.7C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+            <path fill="#ffe4e19d" fill-opacity="1"
+                d="M0,160L48,133.3C96,107,192,53,288,37.3C384,21,480,43,576,96C672,149,768,235,864,229.3C960,224,1056,128,1152,101.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
 
-        </path>
+            </path>
         </svg>
         <div class="div">
-            <a href="https://pt.wikipedia.org/wiki/Sword_Art_Online"><img src="../imagem/arma.png" alt="menina com arma" class="img-solta2"></a>
+            <a href="https://pt.wikipedia.org/wiki/Sword_Art_Online"><img src="../imagem/arma.png" alt="menina com arma"
+                    class="img-solta2"></a>
             <div class="frase"><b>Mergulhe fundo na sua imaginação:</b>
                 <br><br>
                 Receba notícias, leia mangás, faça aulas e comente tudo oque quiser.
@@ -204,12 +229,15 @@
         <div class="frase2">
             <b>Aprenda japônes com nossa página de estudos:</b><br><br>
             Entenda o idioma de seus desenhos preferidos e ajude na tradução com nossa equipe.
+            <br>
+            Cadastre-se para estudar.
             <br><br>
-           <a href="html/curso.html"><button onclick="aprender()" class="but">Aprender</button></a> 
+            <a href="cadastro_login.html"><button onclick="aprender()" class="but">Acesse</button></a>
 
         </div>
 
-        <a href="https://pt.wikipedia.org/wiki/Dragon_Ball_(s%C3%A9rie)"><img src="../imagem/goku.png" alt="goku solto" width="47%"></a>
+        <a href="https://pt.wikipedia.org/wiki/Dragon_Ball_(s%C3%A9rie)"><img src="../imagem/goku.png" alt="goku solto"
+                width="47%"></a>
     </div>
 
     <!-- container 4 -->
@@ -224,66 +252,71 @@
     </div>
 
 </body>
-    <!-- rodapé -->
-    <footer>
-        <section class="footer">
-            <div class="container">
-                <ul>
-                    <li class="grid-8">
-                        <h2>AnimeEX:</h2>
-                        <p><a href="https://animeex.atlassian.net/servicedesk/customer/portals">Central de ajuda</a></p>
-                        <p><a href="">Política de Privacidade</a></p>
-                        <p><a href="support@animeex.atlassian.net">Email da página</a></p>
-                    </li>
+<!-- rodapé -->
+<footer>
+    <section class="footer">
+        <div class="container">
+            <ul>
+                <li class="grid-8">
+                    <h2>AnimeEX:</h2>
+                    <p><a href="https://animeex.atlassian.net/servicedesk/customer/portals">Central de ajuda</a></p>
+                    <p><a href="">Política de Privacidade</a></p>
+                    <p><a href="support@animeex.atlassian.net">Email da página</a></p>
+                </li>
 
-                    <li class="grid-4">
-                        <h2>Siga-nos:</h2>
-                        <section class="section">
-                            <div class="rede" id="facebook">
-                                <a href="https://www.facebook.com/"><img src="../imagem/face.png" class="icone"
-                                        alt="icone facebook"></a>
-                            </div>
-                            <div class="rede" id="youtube">
-                                <a href="https://www.youtube.com/"><img src="../imagem/you.png" class="icone"
-                                        alt="icone youtube"></a>
-                            </div>
-                            <div class="rede" id="github">
-                                <a href="https://github.com/RafaellaKimberlly/AnimeEX.git"><img src="../imagem/git.png"
-                                        class="icone" alt="icone github"></a>
-                            </div>
-                            <div class="rede" id="whatsapp">
-                                <a href="https://www.whatsapp.com/?lang=pt_br"><img src="../imagem/whats.png"
-                                        class="icone" alt="icone whatsapp"></a>
-                            </div>
-                        </section>
-                    </li>
+                <li class="grid-4">
+                    <h2>Siga-nos:</h2>
+                    <section class="section">
+                        <div class="rede" id="facebook">
+                            <a href="https://www.facebook.com/"><img src="../imagem/face.png" class="icone"
+                                    alt="icone facebook"></a>
+                        </div>
+                        <div class="rede" id="youtube">
+                            <a href="https://www.youtube.com/"><img src="../imagem/you.png" class="icone"
+                                    alt="icone youtube"></a>
+                        </div>
+                        <div class="rede" id="github">
+                            <a href="https://github.com/RafaellaKimberlly/AnimeEX.git"><img src="../imagem/git.png"
+                                    class="icone" alt="icone github"></a>
+                        </div>
+                        <div class="rede" id="whatsapp">
+                            <a href="https://www.whatsapp.com/?lang=pt_br"><img src="../imagem/whats.png" class="icone"
+                                    alt="icone whatsapp"></a>
+                        </div>
+                    </section>
+                </li>
 
-                    <li class="grid-4">
-                        <h2>Baixe nossa Newsletter:</h2><br>
-                        <!-- Aqui crio o link para download da imagem e coloco junto ao botão -->
-                        <a href="news/newsletter.pdf" download="./news/newsletter.pdf"><button onclick="baixar()" class="but">Baixar</button></a>
-                    </li>
+                <li class="grid-4">
+                    <h2>Baixe nossa Newsletter:</h2><br>
+                    <!-- Aqui crio o link para download da imagem e coloco junto ao botão -->
+                    <a href="news/newsletter.pdf" download="./news/newsletter.pdf"><button onclick="baixar()"
+                            class="but">Baixar</button></a>
+                </li>
 
-                    <li class="grid-8">
-                        <h2>Permissões:</h2>
-                        <!-- Aqui estão todos os direitos reservados aos autores -->
-                        <p>Direitos autorais e marcas para mangás e animes, e outros materiais 
-                            promocionais são mantidos por seus respectivos proprietários e a sua utilização é permitida nos termos da 
-                            cláusula de uso justo da Lei de Direitos Autorais Americana. 
-                            <br>
-                             (Copyrights and trademarks for the manga, and other promotional 
-                            materials are held by their respective owners and their 
-                            use is allowed under the fair use clause of the U.S. Copyright Law.) - Hosted in U.S. | 2012 - 2021 .::.AnimeEX</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                <li class="grid-8">
+                    <h2>Permissões:</h2>
+                    <!-- Aqui estão todos os direitos reservados aos autores -->
+                    <p>Direitos autorais e marcas para mangás e animes, e outros materiais
+                        promocionais são mantidos por seus respectivos proprietários e a sua utilização é permitida nos
+                        termos da
+                        cláusula de uso justo da Lei de Direitos Autorais Americana.
+                        <br>
+                        (Copyrights and trademarks for the manga, and other promotional
+                        materials are held by their respective owners and their
+                        use is allowed under the fair use clause of the U.S. Copyright Law.) - Hosted in U.S. | 2012 -
+                        2021 .::.AnimeEX
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-        <div class="footer2"><b> © Copyright 2021 - Feito com carinho por Rafaella Kimberlly </b></div>
+    <div class="footer2"><b> © Copyright 2021 - Feito com carinho por Rafaella Kimberlly </b></div>
 
-    </footer>
+</footer>
 
 </html>
 
 <script src="html/js-home.js"></script>
-<script data-jsd-embedded data-key="fea9410d-df66-481e-ae42-f4bd272b77df" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+<script data-jsd-embedded data-key="fea9410d-df66-481e-ae42-f4bd272b77df"
+    data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
