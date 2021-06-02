@@ -10,7 +10,7 @@
     <title>AnitubeEX</title>
 </head>
 
-<body>
+<body onload="atualizar_nome();">
 <header>
     <!--Menu-->
     <div id="menu">
@@ -31,6 +31,11 @@
     </div>
     <div class="menu-bg" id="menu-bg"></div>
     <!-- fim -->
+
+    <h2 style="margin-left: 603px; margin-top: 22px;">
+        Olá <span id="nome_usuario" class="nome"></span>
+     </h2>
+     
 
     <!-- logo no header da pagina -->
     <div>
@@ -331,7 +336,4 @@
 <script src="js-home.js"></script>
 <script data-jsd-embedded data-key="fea9410d-df66-481e-ae42-f4bd272b77df"
     data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
-
-<script>
-
-</script>
+    <script src="nome.js"></script>

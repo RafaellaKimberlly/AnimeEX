@@ -10,7 +10,7 @@
 
     <title>Formulario</title>
 </head>
-<body>
+<body onload="atualizar_nome();">
 
     <!--Menu-->
     <div id="menu">
@@ -31,6 +31,10 @@
     </div>
     <div class="menu-bg" id="menu-bg"></div>
     <!-- fim -->
+
+    <h2 style="margin-left: 603px;">
+        Olá <span id="nome_usuario" class="nome"></span>
+     </h2>
 
     <!-- logo no header da pagina -->
     <div>
@@ -166,19 +170,20 @@
 </div>
 
 <!-- rodapé -->
+<!-- rodapé -->
 <footer>
     <section class="footer">
-        <div class="container">
+        <div class="container-rodape">
             <ul>
                 <li class="grid-8">
                     <h2>AnimeEX</h2>
-                    <p><a href="">Central de ajuda</a></p>
+                    <p><a href="https://animeex.atlassian.net/servicedesk/customer/portals">Central de ajuda</a></p>
                     <p><a href="">Politicas de privacidade</a></p>
-                    <p><a href="">Termos de serviço</a></p>
+                    <p><a href="support@animeex.atlassian.net">Email da pagina</a></p>
                 </li>
 
                 <li class="grid-4">
-                    <h2>Siga-nos</h2>
+                    <h2> Siga-nos</h2>
                     <section class="section">
                         <div class="rede" id="facebook">
                             <a href="https://www.facebook.com/"><img src="../imagem/face.png" class="icone"
@@ -193,30 +198,32 @@
                                     class="icone" alt="icone github"></a>
                         </div>
                         <div class="rede" id="whatsapp">
-                            <a href="https://www.whatsapp.com/?lang=pt_br"><img src="../imagem/whats.png"
-                                    class="icone" alt="icone whatsapp"></a>
+                            <a href="https://www.whatsapp.com/?lang=pt_br"><img src="../imagem/whats.png" class="icone"
+                                    alt="icone whatsapp"></a>
                         </div>
                     </section>
                 </li>
 
                 <li class="grid-4">
                     <h2>Baixe nossa Newsletter</h2>
-                    <button onclick="baixar()" class="but">baixar</button>
+                    <!-- Aqui crio o link para download da imagem e coloco junto ao botão -->
+                    <a href="../news/newsletter.pdf" download="news/newsletter.pdf"><button onclick="baixar()"
+                            class="but">Baixar</button></a>
                 </li>
 
                 <li class="grid-8">
-                    <h2>Entre em contato conosco</h2>
-                    <input type="text" id="nome_cont" placeholder="Nome" required>
-                    <br><br>
-
-                    <input type="email" id="email_cont" placeholder="Email" required>
-                    <br><br>
-
-                    <textarea id="msg_cont" cols="22" rows="5" placeholder="Escreva uma mensagem"
-                        required></textarea>
-                    <br><br>
-
-                    <button class="but" onclick="enviar()">Enviar</button>
+                    <h2>Permissões</h2>
+                    <!-- Aqui estão todos os direitos reservados aos autores -->
+                    <p>Direitos autorais e marcas para mangás e animes, e outros materiais
+                        promocionais são mantidos por seus respectivos proprietários e a sua utilização é permitida nos
+                        termos da
+                        cláusula de uso justo da Lei de Direitos Autorais Americana.
+                        <br>
+                        (Copyrights and trademarks for the manga, and other promotional
+                        materials are held by their respective owners and their
+                        use is allowed under the fair use clause of the U.S. Copyright Law.) - Hosted in U.S. | 2012 -
+                        2021 .::.AnimeEX
+                    </p>
                 </li>
             </ul>
         </div>
@@ -229,6 +236,13 @@
 </html>
 
 <script src="html/js-home.js"></script>
+<script data-jsd-embedded data-key="fea9410d-df66-481e-ae42-f4bd272b77df"
+    data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+<script src="nome.js"></script>
+
+<script>
+    
+</script>
 
 </body>
 </html>

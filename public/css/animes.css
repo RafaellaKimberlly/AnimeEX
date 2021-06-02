@@ -12,6 +12,7 @@ body{
     color: rgb(173, 23, 73);
     /* text-shadow: 3px 3px pink; */
     background-image: url('https://images6.alphacoders.com/459/thumb-1920-459839.jpg');
+    overflow-x: hidden;
 }
 /* logo */
 .logo{
@@ -463,3 +464,18 @@ body{
     width: 40px;
 }
 /* fim */
+
+.nome{
+    text-transform: uppercase;
+    color: #20B2AA;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgba(17, 164, 223, 0.856);
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {color: #FF69B4;}
+  25%  {color: #DDA0DD;}
+  50%  {color: #055753;}
+  100% {color: #20B2AA;}
+  }

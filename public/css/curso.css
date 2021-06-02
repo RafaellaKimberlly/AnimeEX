@@ -177,10 +177,10 @@ body{
     background-color: #20B2AA;
 }
 .container-box{
-    height: 880px;
+    height: 748px;
     background-color: white;
 }
-.container-box h2{
+.text-diferente{
     font-size: 2.4rem;
     width: 85%;
     margin-top: 40px;
@@ -194,39 +194,144 @@ body{
     transition: all 0.2s;
     -webkit-background-clip:text;
 }
-.container-box h2:hover{
+.text-diferente:hover{
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5);
 }
-.galeria{
-    height: 400px;
+
+.text-diferente2{
+    font-size: 2.4rem;
+    width: 85%;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right,#20B2AA,#FF69B4);
+    color: transparent;
+    letter-spacing: 0.2rem;
+    transition: all 0.2s;
+    -webkit-background-clip:text;
+    margin-bottom: 15px;
 }
-.galeria img{
-    width: 25%;
-    margin-left: 90px;
-    margin-top: 25px;
-    transition: width 2s, height 4s;
+.text-diferente2:hover{
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5);
 }
-.galeria img:hover {
-    width: 390px;
-    height: 400px;
+
+.container-galeria{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:20px;
+    left: 180px;
 }
-.video{
-    margin-left: 220px;
-    margin-top: 30px;
+.container-galeria .card{
+    position: relative;
+    height: 250px;
+    background: rgb(240, 235, 235);
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+    box-shadow: 15px 15px 15px;
 }
-.container-3{
-    height: 410px;
-    width: 90%;
-    margin-top: 20px;
-    margin-left: 70px;
+.container-galeria .card .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(177, 175, 175, 0.959);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
 }
-.container-3 img{
-    width: 380px;
-    margin-left: 140px;
+.container-galeria .card:hover .imgBx{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background: #ff0057;
 }
-/* .container{
-    margin-bottom: 30px;
-} */
+.container-galeria .card .imgBx:before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+.container-galeria .card .imgBx img{
+    max-width: 180px;
+    transition: 0.5s ease-in-out;
+}
+.container-galeria .card:hover .imgBx img{
+    max-width: 130px;
+}
+.container-galeria .card .content{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-galeria .card .content h3{
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+.container-galeria .card .content a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+}
+.text-caixinha{
+    margin-left: 35px;
+}
+@media (max-width: 992px){
+    .container-galeria{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-galeria .card{
+        width: 400px;
+    }
+}
+@media (max-width: 768px){
+    .container-galeria .card{
+        max-width: 300px;
+        flex-direction: column;
+    }
+    .container-galeria .card .imgBx{
+        position: relative;
+    }
+    .container-galeria .card .imgBx,
+    .container-galeria .card:hover .imgBx{
+        width: 100%;
+        height: 200px;
+        left: 0;
+    }
+    .container-galeria .card .imgBx img,
+    .container-galeria .card:hover .imgBx img{
+        max-width: 100px;
+    }
+    .container-galeria .card .content{
+        position: relative;
+        width: 100%;
+    }
+}
+
+
 .frase2{
     width: 570px;
     height: 146px;
@@ -314,9 +419,9 @@ body{
 .video-2{
     margin-left: 255px;
     margin-top: 0px;
-    padding-top: 76px;
-
+    padding-top: 30px;
 }
+
 /* rodapé */
 .footer{
     width: 100%;
@@ -399,3 +504,18 @@ body{
     width: 40px;
 }
 /* fim */
+
+.nome{
+    text-transform: uppercase;
+    color: #20B2AA;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgba(17, 164, 223, 0.856);
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {color: #FF69B4;}
+  25%  {color: #DDA0DD;}
+  50%  {color: #055753;}
+  100% {color: #20B2AA;}
+  }

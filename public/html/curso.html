@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/curso.css">
     <link rel="shortcut icon" href="../logo/logo.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Curso</title>
 </head>
 <!--Menu-->
@@ -29,12 +30,16 @@
 <div class="menu-bg" id="menu-bg"></div>
 <!-- fim -->
 
+<h2 style="margin-left: 603px; margin-top: 22px;">
+    Olá <span id="nome_usuario" class="nome"></span>
+</h2>
+
 <!-- logo no header da pagina -->
 <div>
     <a href="index.html"><img src="../logo/logocorte.gif" alt="logo" class="logo"></a>
 </div>
 
-<body>
+<body onload="atualizar_nome();">
 
     <!-- Inicio -->
     <div class="container">
@@ -63,209 +68,288 @@
     <div class="container-1"></div>
 
     <div class="container-box">
-        <h2>O que você vai aprender na aula de japonês:</h2>
+        <h2 class="text-diferente">O que você vai aprender na aula de japonês:</h2>
 
-        <div class="galeria">
-            <a href="../documentação/tabela-hiragana-katakana.pdf"
-                download="../documentação/tabela-hiragana-katakana"><img src="../galeria/1.jpg" alt=""></a>
-            <a href="../documentação/textbook_kana_all.pdf" download="../documentação/textbook_kana_all.pdf"><img
-                    src="../galeria/2.jpg" alt=""></a>
-            <a href="../documentação/Apostila Hiragana Katakana.pdf"
-                download="../documentação/Apostila Hiragana Katakana.pdf"><img src="../galeria/3.jpg" alt=""></a>
+        <div class="container-galeria">
+            <div class="card">
+                <div class="imgBx" data-text="Hiragana">
+                    <img src="https://i.pinimg.com/originals/9d/12/76/9d1276e4314906437e1552ca79eb2866.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="text-caixinha">
+                        <h3>Hiragana</h3>
+                        <p>(平仮名) é o alfabeto fonético básico do Japonês. Ele representa todos os sons na língua Japonesa. 
+                            Portanto, você pode teoricamente escrever tudo em japonês somente em hiragana, mas como sabemos.</p>
+                        <a href="../galeria/1.jpg">Baixar Lição</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="imgBx" data-text="Katakana">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Simbolo_konoha.svg/1024px-Simbolo_konoha.svg.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="text-caixinha">
+                        <h3>Katakana</h3>
+                        <p>カタカナ é um dos silabários empregados na escrita japonesa junto com o hiragana. 
+                            Se atribui sua invenção ao monge Kukai o Kobo Daishi.</p>
+                        <a href="../galeria/2.jpg">Baixar Lição</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="imgBx" data-text="Audio">
+                    <img src="../imagem/soul.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="text-caixinha">
+                        <h3>Conversação</h3>
+                        <p>会話, Quebrar o gelo, começar uma conversação em qualquer idioma, e com pessoas das mais variadas culturas é muito importante. 
+                            No Japão não é diferente e, em muitos casos, 
+                            dizer um simples e educado “olá” em japonês é tudo o que você precisa para iniciar seu bate-papo.</p>
+                        <a href="../audio/01 Faixa 1.mp3">Audio 1</a>
+                        <a href="../audio/02 Faixa 2.mp3">Audio 2</a>
+                        <a href="../audio/03 Faixa 3.mp3">Audio 3</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="imgBx" data-text="Videos">
+                    <img src="../imagem/shingeki-removebg-preview.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="text-caixinha">
+                        <h3>Videos</h3>
+                        <p>Vídeos Arquivo
+                            Revisando Frases em Japonês com Anki
+                             11 de janeiro de 2019  Como Aprender Japonês, Vídeos
+                            
+                            Uma forma de aumentar consideravelmente a produtividade nos 
+                            estudos de japonês é o uso de uma ferramenta de repetição espaçada.</p>
+                            <a href="https://www.youtube.com/watch?v=ljQHGmBmc1s&t=225s">Assistir 1</a>
+                            <a href="https://www.youtube.com/watch?v=hl61Nsm9qgY">Assistir 2</a>
+                            <a href="https://www.youtube.com/watch?v=sFiP5YW1m48">Assistir 3</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="video">
-            <iframe width="600" height="350" src="https://www.youtube.com/embed/ljQHGmBmc1s"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
 
-            <video controls autoplay name="media">
-                <source src="../audio/01 Faixa 1.mp3" type="audio/mpeg">
-            </video>
+        <div class="container-2"></div>
 
-        </div>
-    </div>
-    </div>
-    <div class="container-2"></div>
-
-    <div class="container">
-        <div class="frase2">
-            Te ensinar a aplicação com frases e exemplos para você usar junto com tudo que você aprender durante o
-            curso!
-            みんなの日本語語彙
-            <br><br>
-            <a href="../documentação/Minna no Nihongo Shokyuu 1 - Tradução e Notas Gramaticais PT_BR.pdf"
-                download="../documentação/Minna no Nihongo Shokyuu 1 - Tradução e Notas Gramaticais PT_BR.pdf"><button
-                    onclick="aprender()" class="but">vocábulario</button></a>
-
+        <div class="container">
             <div class="frase2">
-                Com o livro minna no nihongo você terá na palma da mão, um dos melhores métodos de ensino.
-                日本語の本のミンナ
+                Te ensinar a aplicação com frases e exemplos para você usar junto com tudo que você aprender durante o
+                curso!
+                みんなの日本語語彙
                 <br><br>
-                <a href="../documentação/Minna No Nihongo Shokyuu I - Honsatsu.pdf"
-                    download="../documentação/Minna No Nihongo Shokyuu I - Honsatsu.pdf"><button onclick="aprender()"
-                        class="but">Livro</button></a>
+                <a href="../documentação/Minna no Nihongo Shokyuu 1 - Tradução e Notas Gramaticais PT_BR.pdf"
+                    download="../documentação/Minna no Nihongo Shokyuu 1 - Tradução e Notas Gramaticais PT_BR.pdf"><button
+                        onclick="aprender()" class="but">vocábulario</button></a>
+
+                <div class="frase2">
+                    Com o livro minna no nihongo você terá na palma da mão, um dos melhores métodos de ensino.
+                    日本語の本のミンナ
+                    <br><br>
+                    <a href="../documentação/Minna No Nihongo Shokyuu I - Honsatsu.pdf"
+                        download="../documentação/Minna No Nihongo Shokyuu I - Honsatsu.pdf"><button
+                            onclick="aprender()" class="but">Livro</button></a>
+
+                </div>
 
             </div>
 
+            <a href="https://pt.wikipedia.org/wiki/Fairy_Tail"><img
+                    src="https://static.tumblr.com/ws59rcg/eYXm4ejzn/mjv-art.org_-_150898-2500x3000-ice_do__28artist_29-fairy_tail-natsu_dragneel-short_hair-solo-highres.png"
+                    alt="natsu" width="35%" class="img10"></a>
         </div>
 
-        <a href="https://pt.wikipedia.org/wiki/Fairy_Tail"><img
-                src="https://static.tumblr.com/ws59rcg/eYXm4ejzn/mjv-art.org_-_150898-2500x3000-ice_do__28artist_29-fairy_tail-natsu_dragneel-short_hair-solo-highres.png"
-                alt="natsu" width="35%" class="img10"></a>
-    </div>
-
-    <div class="container-1"></div>
-    <div class="box-kk">
-        <h2 class="text">
-            Muitas pessoas sabem cantar algumas músicas porque decoraram as letras…
-        </h2>
-        <br>
-        <h4 class="text">
-            Nessa aula vou mostrar como aprender as letras e ao mesmo tempo como aprender japonês com as músicas que
-            você mais gosta.
-        </h4>
-    </div>
-    <div class="container-1"></div>
-
-    <div class="diretrizes">
-        <div class="caixa_conheça">
-            <p class="box_dentro">
-                <img src="http://upload.wikimedia.org/wikipedia/commons/4/45/%E7%99%BE-order.gif" alt="" width="60px"> 
-                <br>
-                一	 ニ	  三	四	   五
-                um	dois três quatro cinco
-               <button onclick="ouvir()" class="but-caixinha">Video</button>
-               <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
-            </p>
-
-            <br><br>
-
-            <p class="box_dentro">
-                <img src="http://upload.wikimedia.org/wikipedia/commons/3/36/%E4%B8%87-order.gif" alt="" width="60px"> 
-                <br>
-                3000 - 三千 - SANZEN
-                9000 - 九千 - KYUUSEN
-                <button onclick="ouvir()" class="but-caixinha">Video</button>
-               <a href="../documentação/1nen_kanji_02.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
-            </p>
-
-            <br><br>
-
-            <p class="box_dentro">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/%E4%B8%8A-order.gif" alt="" width="60px"> 
-                <br>
-                上	下	中
-                em cima	embaixo	dentro
-
-                <button onclick="ouvir()" class="but-caixinha">Video</button>
-               <a href="../documentação/1nen_kanji_03.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
-            </p>
-
-            <br><br>
-
-            <p class="box_dentro">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/%E5%B1%B1-order.gif/100px-%E5%B1%B1-order.gif" alt="" width="60px"> 
-                <br>
-                山	川	火	水
-                montanha	rio	fogo	água
-
-                <button onclick="ouvir()" class="but-caixinha">Video</button>
-               <a href="../documentação/1nen_kanji_karuta.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
-            </p>
+        <div class="container-1"></div>
+        <div class="box-kk">
+            <h2 class="text">
+                Muitas pessoas sabem cantar algumas músicas porque decoraram as letras…
+            </h2>
+            <br>
+            <h4 class="text">
+                Nessa aula vou mostrar como aprender as letras e ao mesmo tempo como aprender japonês com as músicas que
+                você mais gosta.
+            </h4>
         </div>
+        <div class="container-1"></div>
 
-        <div class="caixa_conheça">
-            <p class="box_dentro">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/%E6%9C%A8-order.gif" alt="" width="60px"> 
-                <br>
-                木	林	森
-                árvore	bosque	floresta
+        <div class="diretrizes">
+            <div class="caixa_conheça">
+                <p class="box_dentro">
+                    <img src="http://upload.wikimedia.org/wikipedia/commons/4/45/%E7%99%BE-order.gif" alt=""
+                        width="60px">
+                    <br>
+                    一 ニ 三 四 五
+                    um dois três quatro cinco
+                    <button onclick="ouvir()" class="but-caixinha">Video</button>
+                    <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
+                </p>
 
-                <button onclick="ouvir()" class="but-caixinha">Video</button>
-               <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
-            </p>
-            <br><br>
-            <p class="box_dentro">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/%E5%8F%A3-order.gif" alt="" width="60px"> 
-                <br>
-                口	目	耳	手
-                boca	olho	orelha	mão
-                <button onclick="ouvir()" class="but-caixinha">Video</button>
-               <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
-            </p>
-            <br><br>  
+                <br><br>
 
-            <p class="box_dentro">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/%E8%99%AB-order.gif" alt="" width="60px"> 
-                <br>
-                虫	石	足	糸
-                inseto/verme	pedra	pé	linha
+                <p class="box_dentro">
+                    <img src="http://upload.wikimedia.org/wikipedia/commons/3/36/%E4%B8%87-order.gif" alt=""
+                        width="60px">
+                    <br>
+                    3000 - 三千 - SANZEN
+                    9000 - 九千 - KYUUSEN
+                    <button onclick="ouvir()" class="but-caixinha">Video</button>
+                    <a href="../documentação/1nen_kanji_02.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
+                </p>
 
-                <button onclick="ouvir()" class="but-caixinha">Video</button>
-               <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
-            </p>
-            <br><br>
-            <p class="box_dentro">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/%E7%94%B0-order.gif" alt="" width="60px"> 
-                <br>
-                田	力	男	女
-                plantação de arroz	força	homem	mulher
-                
-                <br>
-                <button onclick="ouvir()" class="but-caixinha">Video</button>
-               <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
-            </p>
-        </div>
+                <br><br>
 
-        <div class="caixa_conheça">
-            <p class="box_dentro">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/%E5%B0%8F-order.gif" alt="" width="60px"> 
-                <br>
-                	
-                大きい	小さい	犬	王さま
-                grande	pequeno	cachorro	rei
-                <button onclick="ouvir()" class="but-caixinha">Video</button>
-               <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
-            </p>
-            <br><br>
-            <p class="box_dentro">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/%E8%BB%8A-order.gif" alt="" width="60px"> 
-                <br>
-                人	車	村	町
-                pessoa	carro	vila/povoado	cidade
-                <br>
-                <button onclick="ouvir()" class="but-caixinha">Video</button>
-               <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
-            </p>
+                <p class="box_dentro">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/%E4%B8%8A-order.gif" alt=""
+                        width="60px">
+                    <br>
+                    上 下 中
+                    em cima embaixo dentro
+
+                    <button onclick="ouvir()" class="but-caixinha">Video</button>
+                    <a href="../documentação/1nen_kanji_03.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
+                </p>
+
+                <br><br>
+
+                <p class="box_dentro">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/%E5%B1%B1-order.gif/100px-%E5%B1%B1-order.gif"
+                        alt="" width="60px">
+                    <br>
+                    山 川 火 水
+                    montanha rio fogo água
+
+                    <button onclick="ouvir()" class="but-caixinha">Video</button>
+                    <a href="../documentação/1nen_kanji_karuta.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
+                </p>
+            </div>
+
+            <div class="caixa_conheça">
+                <p class="box_dentro">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/%E6%9C%A8-order.gif" alt=""
+                        width="60px">
+                    <br>
+                    木 林 森
+                    árvore bosque floresta
+
+                    <button onclick="ouvir()" class="but-caixinha">Video</button>
+                    <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
+                </p>
                 <br><br>
                 <p class="box_dentro">
-                    <img src="https://nihongoichibandotcom.files.wordpress.com/2011/04/5148.gif?w=144" alt="" width="60px"> 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/%E5%8F%A3-order.gif" alt=""
+                        width="60px">
                     <br>
-                    先	生	年	名
-                    professor(a)	ano	nome
+                    口 目 耳 手
+                    boca olho orelha mão
                     <button onclick="ouvir()" class="but-caixinha">Video</button>
-                   <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
+                    <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
                 </p>
-                <br><br>  
+                <br><br>
+
                 <p class="box_dentro">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/%E5%AD%90-order.gif" alt="" width="60px"> 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/%E8%99%AB-order.gif" alt=""
+                        width="60px">
                     <br>
-                    子	字	学	校
-                    criança	letra	escola
+                    虫 石 足 糸
+                    inseto/verme pedra pé linha
 
                     <button onclick="ouvir()" class="but-caixinha">Video</button>
-                   <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button class="but-caixinha">Baixar</button></a>
+                    <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
                 </p>
-        </div>
-    </div>
+                <br><br>
+                <p class="box_dentro">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/%E7%94%B0-order.gif" alt=""
+                        width="60px">
+                    <br>
+                    田 力 男 女
+                    plantação de arroz força homem mulher
 
-    <div class="container">
-        <div id="msg_video" class="video-2">
-            <iframe width="700" height="430" src="https://www.youtube.com/embed/BqIEOf81jBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br>
+                    <button onclick="ouvir()" class="but-caixinha">Video</button>
+                    <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
+                </p>
+            </div>
+
+            <div class="caixa_conheça">
+                <p class="box_dentro">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/%E5%B0%8F-order.gif" alt=""
+                        width="60px">
+                    <br>
+
+                    大きい 小さい 犬 王さま
+                    grande pequeno cachorro rei
+                    <button onclick="ouvir()" class="but-caixinha">Video</button>
+                    <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
+                </p>
+                <br><br>
+                <p class="box_dentro">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/%E8%BB%8A-order.gif" alt=""
+                        width="60px">
+                    <br>
+                    人 車 村 町
+                    pessoa carro vila/povoado cidade
+                    <br>
+                    <button onclick="ouvir()" class="but-caixinha">Video</button>
+                    <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
+                </p>
+                <br><br>
+                <p class="box_dentro">
+                    <img src="https://nihongoichibandotcom.files.wordpress.com/2011/04/5148.gif?w=144" alt=""
+                        width="60px">
+                    <br>
+                    先 生 年 名
+                    professor(a) ano nome
+                    <button onclick="ouvir()" class="but-caixinha">Video</button>
+                    <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
+                </p>
+                <br><br>
+                <p class="box_dentro">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/%E5%AD%90-order.gif" alt=""
+                        width="60px">
+                    <br>
+                    子 字 学 校
+                    criança letra escola
+
+                    <button onclick="ouvir()" class="but-caixinha">Video</button>
+                    <a href="../documentação/1nen_kanji_01.pdf" download="../documentação/1nen_kanji_01.pdf"><button
+                            class="but-caixinha">Baixar</button></a>
+                </p>
+            </div>
         </div>
-    </div>
+
+        <div class="container">
+            <div id="msg_video" class="video-2">
+                <h2 class="text-diferente2">Assista aqui aos seus videos:</h2>
+               
+                <iframe width="700" height="430" src="https://www.youtube.com/embed/BqIEOf81jBk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
 </body>
 
 <!-- rodapé -->
@@ -296,8 +380,8 @@
                                     class="icone" alt="icone github"></a>
                         </div>
                         <div class="rede" id="whatsapp">
-                            <a href="https://www.whatsapp.com/?lang=pt_br"><img src="../imagem/whats.png"
-                                    class="icone" alt="icone whatsapp"></a>
+                            <a href="https://www.whatsapp.com/?lang=pt_br"><img src="../imagem/whats.png" class="icone"
+                                    alt="icone whatsapp"></a>
                         </div>
                     </section>
                 </li>
@@ -305,19 +389,23 @@
                 <li class="grid-4">
                     <h2>Baixe nossa Newsletter:</h2><br>
                     <!-- Aqui crio o link para download da imagem e coloco junto ao botão -->
-                    <a href="../news/newsletter.pdf" download="./news/newsletter.pdf"><button onclick="baixar()" class="but">Baixar</button></a>
+                    <a href="../news/newsletter.pdf" download="./news/newsletter.pdf"><button onclick="baixar()"
+                            class="but">Baixar</button></a>
                 </li>
 
                 <li class="grid-8">
                     <h2>Permissões:</h2>
                     <!-- Aqui estão todos os direitos reservados aos autores -->
-                    <p>Direitos autorais e marcas para mangás e animes, e outros materiais 
-                        promocionais são mantidos por seus respectivos proprietários e a sua utilização é permitida nos termos da 
-                        cláusula de uso justo da Lei de Direitos Autorais Americana. 
+                    <p>Direitos autorais e marcas para mangás e animes, e outros materiais
+                        promocionais são mantidos por seus respectivos proprietários e a sua utilização é permitida nos
+                        termos da
+                        cláusula de uso justo da Lei de Direitos Autorais Americana.
                         <br>
-                         (Copyrights and trademarks for the manga, and other promotional 
-                        materials are held by their respective owners and their 
-                        use is allowed under the fair use clause of the U.S. Copyright Law.) - Hosted in U.S. | 2012 - 2021 .::.AnimeEX</p>
+                        (Copyrights and trademarks for the manga, and other promotional
+                        materials are held by their respective owners and their
+                        use is allowed under the fair use clause of the U.S. Copyright Law.) - Hosted in U.S. | 2012 -
+                        2021 .::.AnimeEX
+                    </p>
                 </li>
             </ul>
         </div>
@@ -332,9 +420,10 @@
 <script src="js-home.js"></script>
 <script data-jsd-embedded data-key="fea9410d-df66-481e-ae42-f4bd272b77df"
     data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+<script src="nome.js"></script>
 
-    <script>
-        function ouvir(){
-            msg_video.innerHTML = `<iframe width="700" height="430" src="https://www.youtube.com/embed/7bPD7YfnOB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-        }
-    </script>
+<script>
+    function ouvir() {
+        msg_video.innerHTML = `<iframe width="700" height="435" src="https://www.youtube.com/embed/qhEnEHHuRtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+    }
+</script>

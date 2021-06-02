@@ -15,10 +15,12 @@
     height: 760px;
     padding-left: 35px;
     margin-left: 340px;
+    margin-top: 30px;
     padding-right: 60px;
     box-shadow: 3px 3px 5px 2px #ccc;
     padding: 60px 28px 8px 20px;
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 
 #titulo{
@@ -99,7 +101,7 @@ fieldset.grupo .campo{
     box-shadow: 2px 2px 2px violet;
     text-shadow: 1px 1px 1px rgb(240, 10, 144);
     position: absolute;
-    top: 803px;
+    top: 880px;
     left: 45%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -118,3 +120,17 @@ fieldset.grupo .campo{
 #check{
     display: inline-block;
 }
+.nome{
+    text-transform: uppercase;
+    color: #20B2AA;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgba(17, 164, 223, 0.856);
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {color: #FF69B4;}
+  25%  {color: #DDA0DD;}
+  50%  {color: #055753;}
+  100% {color: #20B2AA;}
+  }

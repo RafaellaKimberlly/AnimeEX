@@ -63,7 +63,7 @@ function entrar() {
             resposta.json().then(json => {
 
                 sessionStorage.login_usuario_meuapp = json.login;
-                sessionStorage.nome_usuario_meuapp = json.nome;
+                sessionStorage.nome_usuario_meuapp = json.nomeUsuario;
 
                 window.location.href = 'html/mangas.html';
             });
